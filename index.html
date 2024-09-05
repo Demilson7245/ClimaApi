@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima por Ciudad</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <h1>Datos del Clima</h1>
+    <form id="weather-form">
+        <label for="ciudad">Ciudad:</label>
+
+        <!-- implementacion del boton -->
+
+        <input type="text" id="ciudad" name="ciudad" required>
+        <fieldset>
+            <legend>Unidad de Temperatura:</legend>
+            <label><input type="radio" name="unidad" value="metric" checked>Celsius (°C)</label>
+            <label><input type="radio" name="unidad" value="imperial">Fahrenheit (°F)</label>
+            <label><input type="radio" name="unidad" value="standard">Kelvin (K)</label>
+        </fieldset>
+        <button type="submit">Obtener Clima</button>
+    </form>
+    <div id="resultado"> </div>
+    <!-- Aqui Obtendremos los resultados -->
+    <script src="magia.js"></script>
+</body>
+</html>
